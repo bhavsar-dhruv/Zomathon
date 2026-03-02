@@ -38,18 +38,4 @@ This hardware acts as a pristine data acquisition engine. By enriching Zomato's 
 * **Significant drop in RMSE** during unexpected "Friday Night" offline traffic spikes.
 * **The Halo Effect:** Training the global ML model on ground-truth data from the top 10% of equipped kitchens universally improves KPT accuracy for the remaining 90% of unequipped restaurants.
 
-## 📁 Repository Structure
 
-```text
-├── hardware/
-│   ├── rush_sensor/           # ESP32-C3 firmware (C++) for AMG8833 + ESP-NOW
-│   ├── smart_cubby/           # ESP32-WROOM firmware (C++) for Load Cells + Temp
-│   └── cad_models/            # 3D printable STL files for enclosures
-├── simulation/
-│   ├── thermal_grid_sim.py    # OpenCV/NumPy script simulating the 8x8 Rush Index
-│   └── dataset_generator.py   # Synthetic order generation for ML testing
-├── ml_model/
-│   ├── hybrid_kpt_model.ipynb # Jupyter/Colab notebook with the improved prediction model
-│   └── requirements.txt       # Python dependencies
-└── docs/
-    └── pitch_deck.pdf         # Final hackathon submission slides# Zomathon
